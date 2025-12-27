@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="display-container">
+      <div class="result-equation-display">
+        <p class="js-result-equation-display"></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="button-container">
+      <div class="button-row">
+        <button class="input-button outer-row" disabled>NA</button>
+        <button class="input-button outer-row" data-value="clear" data-type="command">AC</button>
+        <button class="input-button outer-row" data-value="delete" data-type="command">Del</button>
+        <button class="input-button outer-row"  data-value="/" data-type="operator">/</button>
+      </div>
+
+      <div class="button-row">
+        <button class="input-button" data-value="7" data-type="number">7</button>
+        <button class="input-button" data-value="8" data-type="number">8</button>
+        <button class="input-button" data-value="9" data-type="number">9</button>
+        <button class="input-button outer-row" data-value="*" data-type="operator">x</button>
+      </div>
+
+      <div class="button-row">
+        <button class="input-button" data-value="4" data-type="number">4</button>
+        <button class="input-button" data-value="5" data-type="number">5</button>
+        <button class="input-button" data-value="6" data-type="number">6</button>
+        <button class="input-button outer-row" data-value="-" data-type="operator">-</button>
+      </div>
+
+      <div class="button-row">
+        <button class="input-button" data-value="1" data-type="number">1</button>
+        <button class="input-button" data-value="2" data-type="number">2</button>
+        <button class="input-button" data-value="3" data-type="number">3</button>
+        <button class="input-button outer-row" data-value="+" data-type="operator">+</button>
+      </div>
+
+      <div class="button-row">
+        <button class="input-button" data-value="00" data-type="number">00</button>
+        <button class="input-button" data-value="0" data-type="number">0</button>
+        <button class="input-button" data-value="." data-type="decimal">.</button>
+        <button class="input-button evaluate-button" data-value="solve" data-type="command">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
