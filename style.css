@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -46,6 +47,7 @@ button {
 
 button:active {
   scale: 1.15;
+  filter: brightness(250%);
 }
 
 .result-equation-display {
