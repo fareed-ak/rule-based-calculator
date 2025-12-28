@@ -41,12 +41,18 @@ function handleDecimal() {
 
 function handleOperator(value) {
   const lastChar = equation.at(-1)
-  if ('+-/*.'.includes(lastChar)) {
-    return;
-  }
 
   if (equation === '' && (value === '+' || value === '-')) {
     equation += value;
+    return;
+  }
+
+  if ('/*.'.includes(lastChar) && (value === '+' || value === '-')) {
+    equation += value
+    return;
+  }
+
+  if ('+-/*.'.includes(lastChar)) {
     return;
   }
 
@@ -73,9 +79,13 @@ function handleCommand(value) {
 
 function evaluateResult() {
   const lastChar = equation.at(-1);
+  const secondLastChar = equation.at(-2);
 
   if ('+-/*.'.includes(lastChar)) {
     equation = equation.slice(0, -1);
+    if ('+-/*.'.includes(secondLastChar)) {
+      equation = equation.slice(0, -1);
+    }
   }
   
   if (equation) {
