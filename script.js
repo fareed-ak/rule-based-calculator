@@ -42,13 +42,8 @@ function handleDecimal() {
 function handleOperator(value) {
   const lastChar = equation.at(-1)
 
-  if (equation === '' && (value === '+' || value === '-')) {
+  if ((equation === '' || '/*'.includes(lastChar)) && (value === '+' || value === '-')) {
     equation += value;
-    return;
-  }
-
-  if ('/*'.includes(lastChar) && (value === '+' || value === '-')) {
-    equation += value
     return;
   }
 
@@ -69,7 +64,6 @@ function handleCommand(value) {
     case 'delete':
       equation = equation.slice(0, -1)
       display.innerHTML = equation;
-      if (!equation.length) display.innerHTML = '';
       break;
     case 'solve':
       evaluateResult();
@@ -83,13 +77,13 @@ function evaluateResult() {
 
   if ('+-/*.'.includes(lastChar)) {
     equation = equation.slice(0, -1);
-    if ('+-/*.'.includes(secondLastChar)) {
+    if ('+-/*'.includes(secondLastChar)) {
       equation = equation.slice(0, -1);
     }
   }
   
   if (equation) {
-    equation = Number(eval(equation).toFixed(5)) ;
+    equation = Number(eval(equation).toFixed(7)) ;
     display.innerHTML = equation;
     equation = '';
   }
