@@ -34,7 +34,3 @@ not just random string additions.
 - `eval()` is used for calculation (only for learning purpose)
 - This project is not meant for production
 - Main goal was to improve logic and thinking, not to build a perfect calculator
-
----
-
-Beginner project focused on logic, not tutorials.
