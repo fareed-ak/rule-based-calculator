@@ -9,7 +9,7 @@ I tried to build this like a real calculator where inputs follow rules,
 not just random string additions.
 
 ## Live Demo
-👉 https://fareed-ak.github.io/rule-based-calculator/
+👉 [Click here](https://fareed-ak.github.io/rule-based-calculator/)
 
 ## Features
 - Basic operations: +, -, *, /
@@ -17,7 +17,6 @@ not just random string additions.
 - Decimal validation (prevents multiple decimals in one number)
 - Clear and delete functionality
 - Handles edge cases like trailing operators
-- `00` button works as a multiplier (example: `5 + 00 = 500`)
 - Extra `NA` button added only for layout symmetry
 
 ## What I learned from this project
