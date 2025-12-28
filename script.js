@@ -47,7 +47,7 @@ function handleOperator(value) {
     return;
   }
 
-  if ('/*.'.includes(lastChar) && (value === '+' || value === '-')) {
+  if ('/*'.includes(lastChar) && (value === '+' || value === '-')) {
     equation += value
     return;
   }
