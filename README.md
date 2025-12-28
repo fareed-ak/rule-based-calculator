@@ -1,25 +1,41 @@
-# Calculator (JavaScript)
+# Rule-Based Calculator (JavaScript)
 
-This is a simple calculator made using HTML, CSS and JavaScript.
+This is a calculator project made using HTML, CSS, and JavaScript.
 
-The main focus of this project is to handle inputs properly instead of just adding numbers blindly.
-I tried to control wrong inputs like multiple operators, multiple decimals, etc.
+Instead of only focusing on the UI, this project mainly focuses on **handling inputs properly**
+and controlling how the calculator reacts to different user actions.
+
+I tried to build this like a real calculator where inputs follow rules,
+not just random string additions.
+
+## Live Demo
+👉 https://fareed-ak.github.io/rule-based-calculator/
 
 ## Features
 - Basic operations: +, -, *, /
-- Decimal handling
-- Clear and delete buttons
-- Prevents some invalid inputs
-- Added NA button just for symmetry
+- Rule-based number and operator handling
+- Decimal validation (prevents multiple decimals in one number)
+- Clear and delete functionality
+- Handles edge cases like trailing operators
+- `00` button works as a multiplier (example: `5 + 00 = 500`)
+- Extra `NA` button added only for layout symmetry
 
-## Why I made this
-I made this project to practice JavaScript logic and understand how button inputs work in real projects.
+## What I learned from this project
+- How to handle button-based inputs in JavaScript
+- How to control invalid user input
+- How to break logic into small functions
+- Why input validation is important in real projects
 
 ## Tech Used
 - HTML
 - CSS
-- JavaScript
+- Vanilla JavaScript
 
 ## Notes
-- `eval()` is used to calculate the result.
-- This project is for learning purpose.
+- `eval()` is used for calculation (only for learning purpose)
+- This project is not meant for production
+- Main goal was to improve logic and thinking, not to build a perfect calculator
+
+---
+
+Beginner project focused on logic, not tutorials.
