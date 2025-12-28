@@ -14,6 +14,7 @@ body {
   width: 100vw;
   background-color: rgb(100, 99, 99);
   color: white;
+  font-weight: bold;
 }
 
 .container {
@@ -28,7 +29,7 @@ body {
 }
 
 button {
-  background-color: rgb(48, 47, 47);
+  background-color: rgb(46, 46, 46);
   color: white;
   border: 2px solid transparent;
   width: 70px;
@@ -38,7 +39,7 @@ button {
 }
 
 .outer-row {
-  background-color: rgb(19, 17, 17);
+  background-color: rgb(6, 37, 31);
 }
 
 .evaluate-button {
