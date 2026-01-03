@@ -89,6 +89,6 @@ button:active {
 @media (max-width: 600px) {
   .container {
     width: 90vw;
-    height: 78%;
+    height: 88%;
   }
 }
